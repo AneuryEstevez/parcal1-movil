@@ -36,6 +36,7 @@ public class DetailsActivity extends AppCompatActivity {
         stockTextView = findViewById(R.id.stock);
         categoria = findViewById(R.id.categoria);
 
+
         Intent intent = getIntent();
         int productId = intent.getIntExtra("productId", -1);
         APIInterface api = APIClient.getClient().create(APIInterface.class);
